@@ -1,0 +1,21 @@
+name: Cyberacademy test CI
+
+on:  
+  pull_request:
+    branches:
+      - master
+
+jobs:  
+  namabebas:
+    name: CyberAcademy Test 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+        
+      - name: Perintah Linux
+        run: |
+          git status
+          ls -lah
+          id
+          echo "Alkhairunas Riyuska"
